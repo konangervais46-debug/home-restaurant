@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<title>Contact —Home Restaurant</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.infos-contact {
+display: flex;
+gap: 3rem;
+flex-wrap: wrap;
+}
+.bloc-info, .formulaire { flex: 1; min-width: 280px; }
+.bloc-info p { margin-bottom: 0.8rem; font-size:
+1.05rem; }
+.horaires { margin-top: 1.5rem; }
+.horaires h3 {
+color: orange;
+margin-bottom: 0.8rem;
+}
+label {
+display: block;
+margin-bottom: 0.3rem;
+font-weight: bold;
+color: var(--couleur-principale);
+}
+input, textarea {
+width: 100%;
+padding: 0.8rem;
+border: 2px solid #da6709;
+border-radius: 4px;
+margin-bottom: 1rem;
+font-size: 1rem;
+font-family: var(--police);
+}
+input:focus, textarea:focus {
+outline: none;
+border-color: var(--couleur-secondaire);
+}
+button[type='submit'] {
+background-color: var(--couleur-principale);
+color: rgb(219, 137, 15);
+border: none;
+padding: 0.9rem 2rem;
+border-radius: 4px;
+font-size: 1rem;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+button[type='submit']:hover {
+background-color: var(--couleur-secondaire);
+color: var(--couleur-principale);
+}
+</style>
+</head>
+<body>
+<nav>
+<h1><span>H</span>ome <span>R</span>estaurant</h1>
+<ul>
+<li><a href="index.html">Accueil</a></li>
+<li><a href="menu.html">Recettes</a></li>
+<li><a href="apropos.html">A propos</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<section>
+<h2>infos-contact</h2>
+<div class="infos-contact">
+<div class="bloc-info">
+<p><strong>Adresse :</strong></p>
+<p>Angré 8eme Tranche<br>
+Cocody, Abidjan, Cote d'Ivoire</p>
+<p><strong>Telephone :</strong> +225 001 43 09 47 85</p>
+<p><strong>Email :</strong>
+hm@homerestaurant.com</p>
+<div class="horaires">
+<h3>Horaires d'ouverture</h3>
+<p>Lundi - Vendredi : 10h00 - 23h00</p>
+<p>Samedi : 10h00 - 23h00</p>
+<p>Dimanche : 10h00 - 23h00</p>
+</div>
+</div>
+<div class="formulaire">
+<h3>Envoyez-nous un message</h3>
+<form action="#" method="post">
+<label for="nom">Votre nom</label>
+<input type="text" id="nom" name="nom"
+placeholder="konan Moaye" required>
+<label for="email">Votre email</label>
+<input type="email" id="email" name="email"
+placeholder="vous@exemple.com" required>
+<label for="message">Votre message</label>
+<textarea id="message" name="message" rows="5"
+placeholder="Ecrivez votre message ici..."
+required></textarea>
+<button type="submit">Envoyer</button>
+</form>
+</div>
+</div>
+</section>
+<footer>
+<div class="column important">
+    <h3>Merci à vous !</h3>
+    <p>&copy; Copyright Home Restaurant 2026 | Tous droits réservés</p>
+  </div>
+  <div class="column">
+    <h3>Nos services</h3>
+    <p>Boutiques</p>
+    <p>Restaurants</p>
+    <p>Livraison</p>
+  </div>
+  <div class="column">
+  <h3>Recrutement</h3>
+  <p>recrutement@homerestaurant.com</p>
+  <p>Postuler pour un emploi</p>
+  <p>Job étudiant</p>
+</div>
+  <div class="column">
+  <h3>Nos locaux</h3>
+  <p>Abidjan</p>
+  <p>Dakar</p>
+  <p>Bamako</p>
+</div>
+</footer>
+</body>
+</html>
